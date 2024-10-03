@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:villageapp_admin/view/screens/homepage/adddata/adddata_widget.dart';
 import 'package:villageapp_admin/view/screens/homepage/servicewidget/service_screen.dart';
+import 'package:villageapp_admin/view/widgets/text_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -72,8 +74,19 @@ class HomeScreen extends StatelessWidget {
               ),
               ServiceWidget(
                   screenWidth: screenWidth, screenHeight: screenHeight),
+              HomeTextWidget(
+                  screenWidth: screenWidth,
+                  screenHeight: screenHeight,
+                  text: "Add Data",
+                  fontWeight: FontWeight.w600,
+                  fontSize: screenWidth / 25,
+                  paddingLeft: screenWidth / 20,
+                  paddingTop: screenHeight / 30),
+              SizedBox(height: screenHeight / 35),
+              AdddataWidget(
+                  screenWidth: screenWidth, screenHeight: screenHeight),
               SizedBox(
-                height: screenHeight / 8,
+                height: screenHeight / 18,
               ),
               const Text("Dhoomatech.com, All rights reserved"),
               SizedBox(

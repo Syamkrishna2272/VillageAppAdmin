@@ -65,6 +65,16 @@ flutter:
     - lib/asset/images/Group 619.png
     - lib/asset/images/Layer_4.png
     - lib/asset/images/Layer_41.png
+    - lib/asset/images/Frame.png
+    - lib/asset/images/Group 606.png
+    - lib/asset/images/Group 608.png
+    - lib/asset/images/Group 610.png
+    - lib/asset/images/Group 612.png
+    - lib/asset/images/Group 613.png
+    - lib/asset/images/Group 614.png
+    - lib/asset/images/Group 625.png
+    - lib/asset/images/Vector (1).png
+    - lib/asset/images/Group 605.png
    
 
   # An image asset can refer to one or more resolution-specific "variants", see
