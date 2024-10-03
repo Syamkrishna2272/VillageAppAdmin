@@ -35,10 +35,10 @@ class ClearContinueButton extends StatelessWidget {
                       fontWeight: FontWeight.w400, color: Color(0XFF427ECC)),
                 )),
               ),
-            ),
+            ), 
             GestureDetector(
               onTap: () {
-                Navigator.of(context)
+                Navigator.of(context) 
                     .push(MaterialPageRoute(builder: (context) {
                   return const BasicDetailsScreen();
                 }));
