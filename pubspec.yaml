@@ -75,6 +75,17 @@ flutter:
     - lib/asset/images/Group 625.png
     - lib/asset/images/Vector (1).png
     - lib/asset/images/Group 605.png
+    - lib/asset/images/image 1.png
+    - lib/asset/images/image 2.png
+    - lib/asset/images/image 3.png
+    - lib/asset/images/image 4.png 
+    - lib/asset/images/Ellipse 18.png
+    - lib/asset/images/Ellipse 24.png
+    - lib/asset/images/Ellipse 25.png
+    - lib/asset/images/Ellipse 30.png
+    - lib/asset/images/Ellipse 31.png
+    - lib/asset/images/Ellipse 32.png
+   
    
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:villageapp_admin/view/screens/homepage/adddata/taxiservicepage/taxiservice_screen.dart';
 
 class AdddataWidget extends StatelessWidget {
   final List<Map<String, dynamic>> addData = [
@@ -39,7 +40,7 @@ class AdddataWidget extends StatelessWidget {
         itemBuilder: (context, index) {
           final item = addData[index];
           return GestureDetector(
-            // onTap: () => ontappItem(context, item['text']),
+            onTap: () => ontappItem(context, item['text']), 
             child: Container(
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
@@ -79,22 +80,22 @@ class AdddataWidget extends StatelessWidget {
     );
   }
 
-  // void ontappItem(BuildContext context, String text) {
-  //   switch (text) {
-  //     case 'Taxi Services':
-  //       Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-  //         return TaxiServiceScreen();
-  //       }));
-  //       break;
-  //     case 'Nearby Tourist Places':
-  //       Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-  //         return const TouristPlaceScreen();
-  //       }));
-  //       break;
-  //       case 'Emergency':
-  //       Navigator.of(context).push(MaterialPageRoute(builder: (context){
-  //         return EmergencyScreen();
-  //       }));
-  //   }
-  // }
+  void ontappItem(BuildContext context, String text) {
+    switch (text) {
+      case 'Taxi Services':
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+          return TaxiServiceScreen();
+        }));
+        break; 
+      // case 'Nearby Tourist Places':
+      //   Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+      //     return const TouristPlaceScreen();
+      //   }));
+      //   break;
+      //   case 'Emergency':
+      //   Navigator.of(context).push(MaterialPageRoute(builder: (context){
+      //     return EmergencyScreen();
+      //   }));
+    }
+  }
 }
