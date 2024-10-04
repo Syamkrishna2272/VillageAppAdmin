@@ -56,11 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       SizedBox(height: screenHeight / 80),
 
                       TextFormField(
-                        textCapitalization: TextCapitalization.words,
-                        inputFormatters: [
-                          FilteringTextInputFormatter.allow(
-                              RegExp(r'[a-zA-Z]')),
-                        ],
+                        keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
                           enabledBorder: OutlineInputBorder(
                             borderSide:
@@ -89,11 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       SizedBox(height: screenHeight / 80),
 
                       TextFormField(
-                        textCapitalization: TextCapitalization.words,
-                        inputFormatters: [
-                          FilteringTextInputFormatter.allow(
-                              RegExp(r'[a-zA-Z]')),
-                        ],
+                        keyboardType: TextInputType.number,
                         decoration: InputDecoration(
                           enabledBorder: OutlineInputBorder(
                             borderSide:
@@ -122,11 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       SizedBox(height: screenHeight / 80),
 
                       TextFormField(
-                        textCapitalization: TextCapitalization.words,
-                        inputFormatters: [
-                          FilteringTextInputFormatter.allow(
-                              RegExp(r'[a-zA-Z]')),
-                        ],
+                        keyboardType: TextInputType.number,
                         decoration: InputDecoration(
                           enabledBorder: OutlineInputBorder(
                             borderSide:

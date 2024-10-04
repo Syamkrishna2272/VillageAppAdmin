@@ -66,10 +66,11 @@ class IntroPage extends StatelessWidget {
                   buttonColor: Colors.white,
                   text: 'LOGIN TO ACCOUNT ',
                   fontSize: screenWidth / 28,
+                  fontWeight: FontWeight.w500,
                   onPressed: () {
                     Navigator.of(context)
                         .push(MaterialPageRoute(builder: (context) {
-                      return LoginScreen();
+                      return const LoginScreen();
                     }));
                   },
                   textColor: Colors.black,
