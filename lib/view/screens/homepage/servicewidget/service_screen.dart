@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:villageapp_admin/view/screens/homepage/servicewidget/newsportalpage/newsportal_screen.dart';
 
 class ServiceWidget extends StatelessWidget {
   const ServiceWidget({
@@ -78,9 +79,9 @@ class ServiceWidget extends StatelessWidget {
             children: [
               GestureDetector(
                 onTap: () {
-                  // Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                  //   return const NewsPortalScreen();
-                  // }));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                    return const NewsPortalScreen();
+                  })); 
                 },
                 child: Container( 
                   width: screenWidth / 2.3,
