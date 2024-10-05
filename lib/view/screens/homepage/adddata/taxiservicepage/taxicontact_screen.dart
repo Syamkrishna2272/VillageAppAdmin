@@ -62,7 +62,7 @@ class TaxiContactScreen extends StatelessWidget {
           children: [
             Padding(
               padding: EdgeInsets.only(
-                  left: screenWidth / 20, right: screenWidth / 20),
+                  left: screenWidth / 28, right: screenWidth / 28),
               child: GestureDetector(
                 onTap: () {
                   Navigator.of(context)
@@ -71,10 +71,10 @@ class TaxiContactScreen extends StatelessWidget {
                   }));
                 },
                 child: Container(
-                  height: screenHeight / 10,
+                  height: screenHeight / 11,
                   width: screenWidth,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(screenWidth / 45),
+                      borderRadius: BorderRadius.circular(screenWidth / 35),
                       color: const Color(0XFF427ECC)),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,

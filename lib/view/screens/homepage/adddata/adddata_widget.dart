@@ -3,15 +3,24 @@ import 'package:villageapp_admin/view/screens/homepage/adddata/taxiservicepage/t
 
 class AdddataWidget extends StatelessWidget {
   final List<Map<String, dynamic>> addData = [
-    {'image': 'lib/asset/images/Group 605.png', 'text': 'Jobs or Professions'},
-    {'image': 'lib/asset/images/Group 608.png', 'text': 'Taxi Services'},
-    {'image': 'lib/asset/images/Vector (1).png', 'text': 'Bus Services'},
-    {'image': 'lib/asset/images/Group 614.png', 'text': 'Shops and Business'},
-    {'image': 'lib/asset/images/Frame.png', 'text': 'Nearby Tourist Places'},
-    {'image': 'lib/asset/images/Group 606.png', 'text': 'Office Contacts'},
-    {'image': 'lib/asset/images/Group 612.png', 'text': 'Emergency'},
-    {'image': 'lib/asset/images/Group 613.png', 'text': 'Village Shorts'},
-    {'image': 'lib/asset/images/Group 610.png', 'text': 'Event Calender'},
+    {
+      'image': 'lib/asset/images/Group 605 (1).png',
+      'text': 'Jobs or Professions'
+    },
+    {'image': 'lib/asset/images/Group 608 (1).png', 'text': 'Taxi Services'},
+    {'image': 'lib/asset/images/Vector (3).png', 'text': 'Bus Services'},
+    {
+      'image': 'lib/asset/images/Group 614 (1).png',
+      'text': 'Shops and Business'
+    },
+    {
+      'image': 'lib/asset/images/Frame (2).png',
+      'text': 'Nearby Tourist Places'
+    },
+    {'image': 'lib/asset/images/Group 606 (1).png', 'text': 'Office Contacts'},
+    {'image': 'lib/asset/images/Group 612 (1).png', 'text': 'Emergency'},
+    {'image': 'lib/asset/images/Group 613 (1).png', 'text': 'Village Shorts'},
+    {'image': 'lib/asset/images/Group 610 (1).png', 'text': 'Event Calender'},
   ];
 
   AdddataWidget({
@@ -40,7 +49,7 @@ class AdddataWidget extends StatelessWidget {
         itemBuilder: (context, index) {
           final item = addData[index];
           return GestureDetector(
-            onTap: () => ontappItem(context, item['text']), 
+            onTap: () => ontappItem(context, item['text']),
             child: Container(
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
@@ -58,9 +67,12 @@ class AdddataWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
-                      width: screenWidth / 5,
-                      height: screenHeight / 18,
+                      width: screenWidth,
+                      height: screenHeight / 23,
                       child: Image.asset(addData[index]['image']),
+                    ),
+                    SizedBox(
+                      height: screenHeight / 65,
                     ),
                     Text(
                       item['text'],
@@ -86,7 +98,7 @@ class AdddataWidget extends StatelessWidget {
         Navigator.of(context).push(MaterialPageRoute(builder: (context) {
           return TaxiServiceScreen();
         }));
-        break; 
+        break;
       // case 'Nearby Tourist Places':
       //   Navigator.of(context).push(MaterialPageRoute(builder: (context) {
       //     return const TouristPlaceScreen();
