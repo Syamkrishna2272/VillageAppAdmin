@@ -10,6 +10,7 @@ class HomeTextWidget extends StatelessWidget {
     required this.fontSize, // Font size for text
     required this.paddingLeft, // Left padding for the text
     required this.paddingTop, // Top padding for the text
+    this.color = Colors.black, // Optional color parameter with a default value
   });
 
   final double screenWidth;
@@ -19,6 +20,7 @@ class HomeTextWidget extends StatelessWidget {
   final double fontSize;
   final double paddingLeft;
   final double paddingTop;
+  final Color? color; // Optional color parameter
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +36,7 @@ class HomeTextWidget extends StatelessWidget {
             style: TextStyle(
               fontWeight: fontWeight, // Font weight passed as a parameter
               fontSize: fontSize, // Font size passed as a parameter
+              color: color, // Color passed as an optional parameter
             ),
           ),
         ),

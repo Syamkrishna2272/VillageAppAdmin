@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:villageapp_admin/view/screens/homepage/adddata/taxiservicepage/taxiservice_screen.dart';
+import 'package:villageapp_admin/view/screens/homepage/adddata/touristplacepage/touristplace_screen.dart';
 
 class AdddataWidget extends StatelessWidget {
   final List<Map<String, dynamic>> addData = [
@@ -99,10 +100,10 @@ class AdddataWidget extends StatelessWidget {
           return TaxiServiceScreen();
         }));
         break;
-      // case 'Nearby Tourist Places':
-      //   Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-      //     return const TouristPlaceScreen();
-      //   }));
+      case 'Nearby Tourist Places':
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+          return const TouristPlaceScreen();
+        }));
       //   break;
       //   case 'Emergency':
       //   Navigator.of(context).push(MaterialPageRoute(builder: (context){

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:villageapp_admin/view/screens/homepage/servicewidget/newsportalpage/createnew_screen.dart';
+import 'package:villageapp_admin/view/screens/homepage/adddata/touristplacepage/newplace_create_screen.dart';
 import 'package:villageapp_admin/view/screens/homepage/servicewidget/newsportalpage/newscard_widget.dart';
 import 'package:villageapp_admin/view/widgets/text_widget.dart';
 
-class NewsPortalScreen extends StatelessWidget {
-  const NewsPortalScreen({super.key});
+class TouristPlaceScreen extends StatelessWidget {
+  const TouristPlaceScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class NewsPortalScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "News Portal",
+                    "Create Tourist Place",
                     style: TextStyle(fontWeight: FontWeight.w600),
                   )
                 ],
@@ -126,7 +126,7 @@ class NewsPortalScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-            return const CreatenewScreen();
+            return const NewPlaceCreateScreen();
           }));
         },
         backgroundColor: const Color(0XFF427ECC),
