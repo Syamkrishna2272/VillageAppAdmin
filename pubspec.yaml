@@ -62,10 +62,6 @@ flutter:
   assets:
     - lib/asset/images/Ellipse 52.png
     - lib/asset/images/Group 625.png
-    - lib/asset/images/image 1.png
-    - lib/asset/images/image 2.png
-    - lib/asset/images/image 3.png
-    - lib/asset/images/image 4.png 
     - lib/asset/images/Ellipse 18.png
     - lib/asset/images/Ellipse 24.png
     - lib/asset/images/Ellipse 25.png
@@ -96,6 +92,10 @@ flutter:
     - lib/asset/images/Group 619 (1).png
     - lib/asset/images/Layer_4 (1).png
     - lib/asset/images/Layer_41 (1).png
+    - lib/asset/images/image 1 (1).png
+    - lib/asset/images/image 2 (1).png
+    - lib/asset/images/image 3 (1).png
+    - lib/asset/images/image 4 (1).png
     
    
    

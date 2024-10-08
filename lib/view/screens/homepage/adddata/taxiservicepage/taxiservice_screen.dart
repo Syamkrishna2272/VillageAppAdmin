@@ -4,10 +4,10 @@ import 'package:villageapp_admin/view/widgets/text_widget.dart';
 
 class TaxiServiceScreen extends StatelessWidget {
   final List<Map<String, dynamic>> officeData = [
-    {'image': 'lib/asset/images/image 1.png', 'text': 'Car Service'},
-    {'image': 'lib/asset/images/image 2.png', 'text': 'Auto Rickshaw'},
-    {'image': 'lib/asset/images/image 3.png', 'text': 'Pickup Vans'},
-    {'image': 'lib/asset/images/image 4.png', 'text': 'Bus Service'},
+    {'image': 'lib/asset/images/image 1 (1).png', 'text': 'Car Service'},
+    {'image': 'lib/asset/images/image 2 (1).png', 'text': 'Auto Rickshaw'},
+    {'image': 'lib/asset/images/image 3 (1).png', 'text': 'Pickup Vans'},
+    {'image': 'lib/asset/images/image 4 (1).png', 'text': 'Bus Service'},
   ];
 
   TaxiServiceScreen({super.key});
@@ -79,7 +79,7 @@ class TaxiServiceScreen extends StatelessWidget {
                     return Padding(
                       padding: EdgeInsets.only(right: screenWidth / 30),
                       child: GestureDetector(
-                        onTap: () => ontappItem(context, item['text']), 
+                        onTap: () => ontappItem(context, item['text']),
                         child: Container(
                           width: screenWidth / 5,
                           decoration: BoxDecoration(
@@ -147,7 +147,7 @@ class TaxiServiceScreen extends StatelessWidget {
                           children: [
                             SizedBox(
                               width: screenWidth / 5,
-                              height: screenHeight / 15,
+                              height: screenHeight / 18,
                               child: Image.asset(item['image']),
                             ),
                             SizedBox(height: screenHeight / 60),
@@ -180,7 +180,7 @@ class TaxiServiceScreen extends StatelessWidget {
     switch (text) {
       case 'Car Service':
         Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-          return  TaxiContactScreen();
+          return TaxiContactScreen();
         }));
         break;
     }
