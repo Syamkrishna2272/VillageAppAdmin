@@ -13,14 +13,14 @@ class NewsCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: screenWidth,
-      height: screenHeight / 5,
-      decoration: const BoxDecoration(
-        color: Color(0XFFF7F4F6),
-      ),
-      child: Padding(
-        padding: EdgeInsets.all(screenWidth / 30),
+    return Padding(
+      padding: EdgeInsets.only(left: screenWidth / 25, right: screenWidth / 25),
+      child: Container(
+        width: screenWidth,
+        height: screenHeight / 5.8,
+        decoration: const BoxDecoration(
+            // color: Color(0XFFF7F4F6),
+            color: Colors.amber),
         child: Column(
           children: [
             Row(

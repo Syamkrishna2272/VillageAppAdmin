@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:villageapp_admin/view/screens/basicdetailspage/widget/button.dart';
+import 'package:villageapp_admin/view/screens/basicdetailspage/widget/emailform.dart';
 import 'package:villageapp_admin/view/screens/basicdetailspage/widget/textform2.dart';
 import 'package:villageapp_admin/view/screens/basicdetailspage/widget/textfrom1.dart';
-
 
 class BasicDetailsScreen extends StatefulWidget {
   final bool fromUserDataWidget;
@@ -13,8 +13,6 @@ class BasicDetailsScreen extends StatefulWidget {
 }
 
 class _BasicDetailsScreenState extends State<BasicDetailsScreen> {
-  String _selectedGender = 'Male';
-
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
@@ -70,87 +68,14 @@ class _BasicDetailsScreenState extends State<BasicDetailsScreen> {
 
                 //Last name textform field
                 TextFormField2(screenWidth: screenWidth),
-                SizedBox(height: screenHeight / 25),
+                SizedBox(height: screenHeight / 35),
                 const Text(
-                  "Select Gender",
+                  "Email",
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 SizedBox(height: screenHeight / 80),
-                Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.blue),
-                          borderRadius: BorderRadius.circular(screenWidth / 40),
-                          color: _selectedGender == 'Male'
-                              ? const Color.fromARGB(255, 217, 229, 244)
-                              : Colors.transparent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 10),
-                          child: Row(
-                            children: [
-                              Transform.scale(
-                                scale: 1.3,
-                                child: Radio<String>(
-                                  value: 'Male',
-                                  groupValue: _selectedGender,
-                                  activeColor: const Color(0XFF427ECC),
-                                  onChanged: (value) {
-                                    setState(() {
-                                      _selectedGender = value!;
-                                    });
-                                  },
-                                ),
-                              ),
-                              Text('Male',
-                                  style: TextStyle(
-                                      fontSize: screenWidth / 25,
-                                      fontWeight: FontWeight.w600)),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: screenWidth / 30),
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.blue),
-                            borderRadius:
-                                BorderRadius.circular(screenWidth / 40),
-                            color: _selectedGender == 'Female'
-                                ? const Color.fromARGB(255, 217, 229, 244)
-                                : Colors.transparent),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 10),
-                          child: Row(
-                            children: [
-                              Transform.scale(
-                                scale: 1.3,
-                                child: Radio<String>(
-                                  value: 'Female',
-                                  groupValue: _selectedGender,
-                                  activeColor: const Color(0XFF427ECC),
-                                  onChanged: (value) {
-                                    setState(() {
-                                      _selectedGender = value!;
-                                    });
-                                  },
-                                ),
-                              ),
-                              Text('Female',
-                                  style: TextStyle(
-                                      fontSize: screenWidth / 25,
-                                      fontWeight: FontWeight.w600)),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                EmailFormField(screenWidth: screenWidth),
+
                 SizedBox(
                   height: screenHeight / 3.4,
                 ),

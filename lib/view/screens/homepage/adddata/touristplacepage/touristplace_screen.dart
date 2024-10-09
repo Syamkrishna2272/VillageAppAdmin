@@ -53,7 +53,7 @@ class TouristPlaceScreen extends StatelessWidget {
               // Wrap HomeTextWidget and Container in a Row
               Padding(
                 padding: EdgeInsets.symmetric(
-                    horizontal: screenWidth / 20, vertical: screenHeight / 38),
+                    horizontal: screenWidth / 20, vertical: screenHeight / 55),
                 child: Row(
                   children: [
                     HomeTextWidget(
